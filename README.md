@@ -1,7 +1,7 @@
 # Local Chess
 
 <p align="center">
-  A two-player chess game for one laptop, built with TypeScript, Express, and a custom animated browser UI.
+A two-player chess game for one laptop, built with TypeScript, Express, pnpm, and a custom animated browser UI.
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/local-chess-demo.gif" alt="Local Chess demo" width="900">
+  <img src="docs/media/local-chess-demo.gif" alt="Local Chess demo" width="900">
 </p>
 
 ---
@@ -78,6 +78,7 @@ The game is playable, but a few chess rules are still not implemented:
 
 - TypeScript
 - Node.js
+- pnpm
 - Express
 - Plain HTML, CSS, and JavaScript
 - OpenAPI / Swagger
@@ -86,14 +87,6 @@ The game is playable, but a few chess rules are still not implemented:
 
 ### Install dependencies
 
-You can use either `npm` or `pnpm`:
-
-```bash
-npm install
-```
-
-or
-
 ```bash
 pnpm install
 ```
@@ -101,7 +94,7 @@ pnpm install
 ### Start the project
 
 ```bash
-npm start
+pnpm start
 ```
 
 This command:
@@ -118,7 +111,7 @@ http://localhost:3456
 Custom port example:
 
 ```bash
-PORT=4000 npm start
+PORT=4000 pnpm start
 ```
 
 ## API
@@ -178,6 +171,9 @@ src/
 public/
   index.html     Frontend UI, styles, animations, and client logic
 
+docs/
+  media/         README visuals and repository media
+
 dist/
   ...            Compiled TypeScript output
 ```
@@ -199,7 +195,7 @@ dist/
 
 ## Scripts
 
-- `npm start` — compile and run the server
+- `pnpm start` — compile and run the server
 
 ## License
 
